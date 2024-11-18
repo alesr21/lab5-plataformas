@@ -129,7 +129,7 @@ int find_node(DoubleList* list, int data) {
 
 void print_list_forward(DoubleList* list) {
     Node* current = list->head; //Comienza al inicio de la lista
-    //printf("Lista de inicio a fin:  ");
+    
     while (current != NULL) { //Recorre hasta que no hayan mas nodos
         printf("%d -> ", current->data);
         current = current->next;
@@ -140,7 +140,7 @@ void print_list_forward(DoubleList* list) {
 //Funcion para recorrer la lista del final al incio
 void print_list_backward(DoubleList* list) {
     Node* current = list->tail; //Comienza al final de la lista
-    //printf("Lista de fin a inicio:  ");
+    
     while (current != NULL) { //Recorre hasta que no hayan mas nodos
         printf("%d -> ", current->data);
         current = current->prev;
